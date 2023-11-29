@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+ 
+</head>
+<body>
+
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Hitha" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="hitha@hotmail.com" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="hitha123" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="********" oninput="checkPasswordStrength()" required>
+        <div id="password-strength"></div>
+
+        <button type="button" onclick="validateForm()">Register</button>
+    </form>
+
+    
+</body>
+</html>
